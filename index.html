@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Favourite Music</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav">
+        <li class="logo"><i class="fa-solid fa-headphones-simple logo-icon"></i>Musify</li>
+        <li>Home</li>
+        <li>About Us</li>
+        <li class="search-container">
+            <form >
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </li>
+        <li class="login dropdown">
+          <button class="dropbtn" id="dropbtn">
+            <i class="fa-solid fa-circle-user fa-2x"></i><span class="user-text">User</span>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">My Profile</a>
+            <a href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="songList">
+        <h1>My Favourite Music</h1>
+        <div class="songItem-container">
+
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="0" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="1" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="2" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="3" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="4" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="5" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="6" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="7" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="8" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+                    <div class="songItem">
+                      <img>
+                      <span class="songsName"></span>
+                      <span class="songListPlay"><span class="timestamp"></span><i id="9" class="fa-solid fa-circle-play play-button songItem-play"></i></span>
+                    </div>
+
+
+        </div>
+      </div>
+      <div class="songBanner"></div>
+
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" value="0" class="myProgressBar" id="myProgressBar" min="0" max="100">
+      <div class="icons">
+        <i class="fa-solid fa-3x fa-heart favourite popup" id="popup"><span class="popuptext" id="myPopup">Removed From Favourites!</span><span class="popuptext" id="myPopupAdd">Added to Favourites!</span></i>
+        <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+        <i class="fa-regular fa-3x fa-circle-play play-music" id = "masterPlay"></i>
+        <!-- <i class="fa-solid fa-3x fa-circle-pause pause-music"></i> -->
+        <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img class="playGif" id="gif" src="images/playing.gif" alt="gif"><span id="masterSongName"></span>
+      </div>
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+
+</html>
